@@ -38,9 +38,9 @@ class plgContactRegisterContact extends JPlugin {
 			// Insert values.
 			$values = array();
 			foreach ($data as $value) {
-				$values[] = $value;
+				$values[] = $db->quote($value);
 			}
-			$values[] = date("Y-m-d H:i:s");
+			$values[] = $db->quote(date("Y-m-d H:i:s"));
 			$values[] = $db->quote($params);
 
 			// Prepare the insert query.
