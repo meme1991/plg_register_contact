@@ -21,7 +21,7 @@ class plgContactRegisterContact extends JPlugin {
 			// var_dump(time());
 			// var_dump($_SERVER);
 			//
-			$params = json_encode(array(	"PAGE" 					  => $_SERVER['PHP_SELF'],
+			$params = json_encode(array(	"PAGE" 					  => $_SERVER['REQUEST_URI'],
 																		"REQUEST_METHOD"  => $_SERVER['REQUEST_METHOD'],
 																		"SERVER_PROTOCOL" => $_SERVER['SERVER_PROTOCOL'],
 																		"REQUEST_SCHEME"  => $_SERVER['REQUEST_SCHEME']
